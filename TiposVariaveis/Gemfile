@@ -1,4 +1,0 @@
-source 'https://rubygems.org'
-
-gem 'nome_da_gem_1'
-gem 'nome_da_gem_2', '~> 1.0'
