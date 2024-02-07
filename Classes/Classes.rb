@@ -7,9 +7,9 @@ class Pessoa
   def imprimir_ola
     puts "olá #{@nome}"
   end
+
 end
 
+leandro = Pessoa.new("leandro")
 
-  leandro = Pessoa.new("leandro")
-
-  Leandro.imprimir_ola
+  leandro.imprimir_ola
