@@ -13,3 +13,14 @@ end
 
 def retirar(valor)
   if valor <= @saldo
+    @saldo -= valor
+    puts "Saque de #{valor} realizado. Novo saldo: #{@saldo}."
+  else
+    puts "Saldo insuficiente para realizar saque."
+  end
+end
+
+def verificar_saldo
+  puts "Saldo da conta #{@numero_conta}: #{@saldo}."
+end
+end
