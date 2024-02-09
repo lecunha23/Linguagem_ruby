@@ -1,8 +1,8 @@
-require_relative 'Conta'
+require_relative 'Conta_bancaria'
 
 puts "Bem vindo ao Banco Ruby!"
 
-conta = Conta.new('123456', 1000)
+conta = ContaBancaria.new('123456', 1000)
 
 loop do
   puts "==== Menu Principal ===="
@@ -12,19 +12,27 @@ loop do
   puts "4. Sair "
 
   print "Escolha uma opcao: "
-  choice = gets.chomp.to_i
+  opcao = gets.chomp.to_i
 
-  case choice
+  case opcao
   when 1
-    verificar.saldo_conta
+    conta.mostrar_saldo
+
   when 2
     print "Digite o valor a ser depositado: "
     valor = gets.chomp.to_f
-    depositar.conta(valor)
+    conta.depositar(valor)
+
+  when 3
+    print "Digite o valor a ser sacado: "
+    valor = gets.chomp.to_f
+    conta.sacar(valor)
+
   when 4
     puts "Obrigado por usar nossos servicos. até logo"
     break
   else
+
     puts "opcao invalida"
   end
 end

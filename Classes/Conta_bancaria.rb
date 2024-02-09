@@ -1,4 +1,4 @@
-class  Conta
+class  Contabancaria
   attr_reader :numero_conta, :saldo
 
   def initialize(numero_conta, saldo_inicial = 0)
@@ -11,7 +11,7 @@ class  Conta
     puts "Deposito de #{valor} realizado. Novo saldo: #{@saldo}."
 end
 
-def retirar(valor)
+def Sacar(valor)
   if valor <= @saldo
     @saldo -= valor
     puts "Saque de #{valor} realizado. Novo saldo: #{@saldo}."
@@ -20,7 +20,7 @@ def retirar(valor)
   end
 end
 
-def verificar_saldo
+def mostrar_saldo
   puts "Saldo da conta #{@numero_conta}: #{@saldo}."
 end
 end
