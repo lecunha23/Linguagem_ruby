@@ -1,4 +1,4 @@
-require_relative 'Conta_bancaria'
+require "./classe/Conta_bancaria"
 
 puts "Bem vindo ao Banco Ruby!"
 
