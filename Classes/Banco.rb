@@ -1,4 +1,4 @@
-require "./classe/Conta_bancaria"
+require "./CLASSES/Contabancaria"
 
 puts "Bem vindo ao Banco Ruby!"
 

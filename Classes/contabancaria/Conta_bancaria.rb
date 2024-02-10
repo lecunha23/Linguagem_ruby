@@ -1,10 +1,11 @@
+
 class  Contabancaria
   attr_reader :numero_conta, :saldo
 
   def initialize(numero_conta, saldo_inicial = 0)
     @numero_conta = numero_conta
     @saldo = saldo_inicial
-  end
+end
 
   def depositar(valor)
     @saldo += valor
