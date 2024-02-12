@@ -2,15 +2,15 @@
 
 def linear_search(array, target)
   array.each_with_index do |element, index|
-    # verifica se o elemento atual pe igual ao alvo
+    # verifica se o elemento atual é igual ao alvo
     if element == target
       return index
-      #retorna o indice se encontrado
+      #retorna o indice que foi encontrado encontrado
     end
   end
 
   return nil
-  #retorna nil se o alvo nao for encontrado
+  #retorna que o alvo nao for encontrado nos array
 end
 
 arr = [10, 20, 30, 80, 50, 60, 70]
