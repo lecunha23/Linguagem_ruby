@@ -2,7 +2,7 @@
 
 def busca_binaria(array, alvo)
   esquerda = 0
-  direita = array.lenght - 1
+  direita = array.length - 1
 
   while esquerda <= direita
     meio = (esquerda + direita) / 2
@@ -18,6 +18,6 @@ def busca_binaria(array, alvo)
 
   return - 1
 end
-array = [10,12,14,15,18,19,20,25,28]
-alvo = 15
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+alvo = 9
 puts busca_binaria(array, alvo)
